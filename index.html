@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Сайт выполнил Андрианов Сергей Сергеевич, студент МУИВ, группа ИСП/Р-22-09">
+    <title>Бутстрапити</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .min-vh-50 {
+            min-height: 50vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- задание 1 и 8 -->
+    <header class="bg-light">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">ЛОГО</a>
+
+                <!-- задание 9 -->
+                <span class="d-none d-md-block ms-2 small text-muted">декоративный элемент</span>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Открыть меню">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item"><a class="nav-link" href="#catalog">Каталог</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">Галерея</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#price">Прайс</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- задание 3 герой-болкок -->
+        <section class="d-flex align-items-center min-vh-50 bg-white">
+            <div class="container p-3 p-md-5 text-center">
+                <h1 class="display-5">Большой заголовок</h1>
+                <p class="lead">Короткий подзаголовок</p>
+                <a class="btn btn-primary" href="#catalog" role="button">Узнать больше</a>
+            </div>
+        </section>
+
+        <div class="container my-5">
+
+            <!-- задание 2 каталог -->
+            <section id="catalog" aria-label="Каталог">
+                <h2 class="h3 mb-3">Каталог товаров</h2>
+                <div class="row g-3">
+                    <!-- товар -->
+                    <div class="col-12 col-md-6">
+                        <div class="card h-100">
+                            <img src="img/product.jpg" class="card-img-top" alt="Товар"
+                                onerror="this.style.background='#ddd'; this.src='';">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5 card-title">Товар</h3>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-outline-primary mt-auto w-100">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- товар -->
+                    <div class="col-12 col-md-6">
+                        <div class="card h-100">
+                            <img src="img/product.jpg" class="card-img-top" alt="Товар"
+                                onerror="this.style.background='#ddd'; this.src='';">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5 card-title">Товар</h3>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-outline-primary mt-auto w-100">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- товар -->
+                    <div class="col-12 col-md-6">
+                        <div class="card h-100">
+                            <img src="img/product.jpg" class="card-img-top" alt="Товар"
+                                onerror="this.style.background='#ddd'; this.src='';">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5 card-title">Товар</h3>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-outline-primary mt-auto w-100">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- товар -->
+                    <div class="col-12 col-md-6">
+                        <div class="card h-100">
+                            <img src="img/product.jpg" class="card-img-top" alt="Товар"
+                                onerror="this.style.background='#ddd'; this.src='';">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5 card-title">Товар</h3>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-outline-primary mt-auto w-100">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- задание 4 галерея -->
+            <section id="gallery" class="mt-5" aria-label="Галерея">
+                <h2 class="h3 mb-3">Галерея</h2>
+                <div class="row row-cols-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="ratio ratio-4x3">
+                            <div style="background: linear-gradient(135deg,#e7e7e7,#cfcfcf);"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="ratio ratio-4x3">
+                            <div style="background: linear-gradient(135deg,#f0e7ff,#d6c7ff);"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="ratio ratio-4x3">
+                            <div style="background: linear-gradient(135deg,#ffe7e7,#ffcfcf);"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="ratio ratio-4x3">
+                            <div style="background: linear-gradient(135deg,#e7fff0,#cfeee0);"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="ratio ratio-4x3">
+                            <div style="background: linear-gradient(135deg,#fff7e7,#ffefcf);"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="ratio ratio-4x3">
+                            <div style="background: linear-gradient(135deg,#e7f0ff,#cfdeff);"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- задание 5 форма -->
+            <section id="contact-us" class="mt-5" aria-label="Форма обратной связи">
+                <h2 class="h3 mb-3">Связаться с нами</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input id="email" type="email" class="form-control w-100" placeholder="example@mail.com"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Сообщение</label>
+                        <textarea id="message" class="form-control w-100" rows="4"
+                            placeholder="Напишите сообщение"></textarea>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input id="agree" class="form-check-input" type="checkbox">
+                        <label class="form-check-label" for="agree">Согласен с <a class="link-opacity-75-hover" href="#">условиями</a></label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </section>
+
+            <!-- задание 6 таблица прайса -->
+            <section id="price" class="mt-5" aria-label="Прайс">
+                <h2 class="h3 mb-3">Прайс</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered mb-0">
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Описание</th>
+                                <th>Цена</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Название услуги</td>
+                                <td>Описание услуги</td>
+                                <td>1000 руб.</td>
+                            </tr>
+                            <tr>
+                                <td>Название услуги</td>
+                                <td>Описание услуги</td>
+                                <td>1000 руб.</td>
+                            </tr>
+                            <tr>
+                                <td>Название услуги</td>
+                                <td>Описание услуги</td>
+                                <td>1000 руб.</td>
+                            </tr>
+                            <tr>
+                                <td>Название услуги</td>
+                                <td>Описание услуги</td>
+                                <td>1000 руб.</td>
+                            </tr>
+                            <tr>
+                                <td>Название услуги</td>
+                                <td>Описание услуги</td>
+                                <td>1000 руб.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Задание 7 -->
+    <footer class="bg-light py-3 mt-5">
+        <div class="container">
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between gap-2 align-items-start align-items-md-center">
+                <div>&copy; 2025 Копирайт</div>
+                <div class="d-flex gap-3">
+                    <a href="#" class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover">1 ссылка</a>
+                    <a href="#" class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover">2 ссылка</a>
+                    <a href="#" class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover">3 ссылка</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- бутстрап -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
